@@ -16,10 +16,14 @@ p { line-height:1.6; font-size:16px; }
 a { color:#1e90ff; text-decoration:none; }
 a:hover { text-decoration:underline; }
 
+/* PDF Embed */
+iframe { width:100%; height:600px; border:1px solid #ccc; border-radius:5px; }
+
 /* Responsive */
 @media (max-width:600px) {
     header h1 { font-size:28px; }
     section { margin:20px; padding:20px; }
+    iframe { height:400px; }
 }
 </style>
 </head>
@@ -33,6 +37,12 @@ a:hover { text-decoration:underline; }
 <section>
     <h2>Project Details</h2>
     <p>This project analyzes insurance customer patterns to uncover the key factors influencing policy uptake and annual premium levels. Using a clean Power BI dashboard, I transformed raw insurance records into interactive insights that help insurers understand customer behavior, risk distribution, and revenue patterns.</p>
+</section>
+
+<section>
+    <h2>Project PDF</h2>
+    <iframe src="insurance-insights.pdf" frameborder="0"></iframe>
+    <p>If the PDF doesn’t load, <a href="insurance-insights.pdf" target="_blank">click here to view/download it</a>.</p>
 </section>
 
 </body>
